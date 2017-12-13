@@ -3,6 +3,7 @@
     "description": "A simple PHP wrapper for WhatCMS API calls",
     "homepage": "https://whatcms.org/",
     "type": "library",
+    "license": "MIT",
     "require": {
 		"php": ">=5.5",
         "guzzlehttp/guzzle": "~6.0"
