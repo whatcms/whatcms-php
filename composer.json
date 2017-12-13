@@ -1,7 +1,10 @@
 {
     "name": "whatcms/whatcms-php",
     "description": "A simple PHP wrapper for WhatCMS API calls",
+    "homepage": "https://whatcms.org/",
+    "type": "library",
     "require": {
+		"php": ">=5.5",
         "guzzlehttp/guzzle": "~6.0"
     },
     "autoload": {
