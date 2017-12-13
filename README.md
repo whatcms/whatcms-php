@@ -8,7 +8,7 @@ A simple PHP wrapper for WhatCMS API calls
 
 ## Installation
 
-The recommended way to install is through [Composer](http://getcomposer.org).
+We recommended installing whatcms-php through [Composer](http://getcomposer.org).
 
 ```bash
 # Install Composer
@@ -21,15 +21,11 @@ Next, run the Composer command to install the latest stable version of WhatCMS:
 php composer.phar require whatcms/whatcms-php
 ```
 
-After installing, you need to require Composer's autoloader:
+Once installed, you can use the WhatCMS class to fetch results:
 
 ```php
 require 'vendor/autoload.php';
-```
 
-## Example Usage
-
-```php
 $key = 'Your API Key';
 $detector = new \WhatCMS\WhatCMS($key);
 $check_url = 'en.wikipedia.org';
