@@ -1,12 +1,14 @@
 # WhatCMS PHP API
 A simple PHP wrapper for WhatCMS API calls
-[WhatCMS.org](https://whatcms.org).
+
+- [API Documentation](https://whatcms.org/API)
+- [Get API Key](https://whatcms.org/Subscriptions)
+- [WhatCMS.org](https://whatcms.org)
 
 
-## Installing WhatCMS
+## Installation
 
-The recommended way to install WhatCMS is through
-[Composer](http://getcomposer.org).
+The recommended way to install is through [Composer](http://getcomposer.org).
 
 ```bash
 # Install Composer
@@ -24,3 +26,15 @@ After installing, you need to require Composer's autoloader:
 ```php
 require 'vendor/autoload.php';
 ```
+
+## Example Usage
+
+```php
+$key = 'Your API Key';
+$detector = new \WhatCMS\WhatCMS($key);
+$check_url = 'en.wikipedia.org';
+
+$result	 = $detector->CheckUrl($check_url);
+print_r($result)
+```
+
